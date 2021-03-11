@@ -19,17 +19,26 @@
 
 }
 
-  .f-weight-200{font-weight: 200 !important;}
-
   .fsize-xxxlarge{ font-size: xxx-large !important; }
 
   .grey-ish{ color:#BFC7DC !important; }
   
   .inline{ display: inline !important; }
-
   
+  .block{display: block !important;}
+
   .absolute{ position: absolute !important; }
   
   .top-4px{ top: 4px !important;  }
 
-  .divider{border-color: #BFC7DC;}
+  .center{text-align: center;}
+
+  .divider{ border-color: #BFC7DC !important; }
+
+  .bold{ font-weight: bold !important; }
+
+  .mr-20{ margin-right: 20% !important; }
+  
+  .mr-25{ margin-right: 25% !important; }
+  .mr-26{ margin-right: 26% !important; }
+  
