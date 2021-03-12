@@ -1,6 +1,8 @@
 <html>
     
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -8,57 +10,104 @@
 <body>
 
 
-<div class="container">
-
-    <div class="IP-container">
-        <h2 class='Raleway grey-ish'>Your public IP address</h2>
-        <h1 class="Karla fsize-xxxlarge">91.247.76.22</h1>
+    <div id='spinner' class="overlay">
+        <div class="loader"></div>
+    
     </div>
-
-    <div class="location-container">
-        <h2 class='Raleway grey-ish'>location</h2>
-        <h3 class="Raleway"><i class="top-4px glyphicon glyphicon-map-marker grey-ish"></i>Redwood City, USA</h3>   
-    </div>
-
-    <br>
-
-    <hr class="divider">
-
-
-    <div class="Raleway ISP-container">
-        <h5 class='grey-ish bold'>ISP</h5>
-        <h4>Comcast Bussiness Inc</h4>   
-    </div> 
-    <br>
-    <br>
-    <!-- //      DOS means Device Operating Screen    -->
-    <div class="Raleway DOS-container">
-<!-- mr-20px ====> margine-right 20px -->
-<div class="keys">
-
-    <span class="mr-20 Raleway grey-ish bold">Screen Resolution</span>     
-
-    <span class="mr-20 Raleway grey-ish bold">Operating System</span>       
-
-    <span class="Raleway grey-ish bold">Device Type</span>            
-
-<br>  
-    <span class="mr-25">macOS Sierra</span>
-
-    <span class="mr-26">1920x1080</span>
-
-    <span>PC</span>
+    <div id="container" style="display: none;" class="container">
    
-</div>
+        <div class="IP-container">
+       
+            <h2 class='Raleway grey-ish'>Your public IP address</h2>
+        
+            <h1 id="IP" class="Karla fsize-6em">91.247.76.22</h1>
+  
+        </div>
+       <br>
+
+        <div class="location-container">
+          
+            <h4 class='Raleway grey-ish'>Location</h5>
+            <h4 class="Raleway">     <i class="glyphicon glyphicon-map-marker grey-ish"></i>  
+<span id="location"> Redwood City, USA</span>   </h4>
+   
+        </div>
+
+   
+
+   
+        <hr class="divider">
+
+
+    
+        <div class="ISP-container">
+    
+            <h5 class='Raleway grey-ish bold'>ISP</h5>
+    
+            <h4 class="karla" id="ISP">Comcast Bussiness Inc</h4>   
+    
+        </div> 
+    
+        <br>
+    
+        <br>
+    <!-- //      DOS means Device Operating Screen    -->
+        <div class="Raleway DOS-container">
 
           
 
-    </div>
+            <table>
+
+                <tr class="Raleway grey-ish">
+
+                    <th class="fw-100">Device Type</th>
+
+                    <th class="fw-100">Operating System</th>
+
+                    <th class="fw-100">Screen Resolution</th>
+
+                </tr>
+
+                <tr>
+
+                    <td id='Device-Type' class="Raleway">PC</td>
+
+                    <td id="OS" class="Raleway">macOS Sierra</td>
+<!--operating system = OS 
+    SR = Screen Resolution
+-->
+                    <td id="SR" class="karla">1920x1080</td>
+
+                </tr>
+
+                
+  
+                <tr class="grey-ish">
+  
+                    <td class="Raleway"><br><br> Browser </td>
+  
+                    <td class="Raleway"><br><br> Cookies </td> 
+  
+                </tr> 
+  
+                <tr>
+  <!-- Bname= browser name -->
+                    <td id="B-Name" class="Raleway">Chrome</td>
+  
+                    <td id="isEnabled" class="Raleway">Enabled</td> 
+  
+                </tr>
+
+            </table>
+
+        </div>
     
-</div>
+
+    </div>
 
 
-<script src="./js/index.js"></script>
+
+    <script src="./js/index.js"></script>
 
 </body>
 </html>

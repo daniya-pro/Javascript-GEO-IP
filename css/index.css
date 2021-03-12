@@ -18,6 +18,52 @@
     font-family:Karla !important;
 
 }
+.overlay {
+  background-color:white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid #BFC7DC;
+  border-right-color: transparent;
+  transform-origin: center;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+ 
+  .fw-100{font-weight: 100;}
+  .fsize-6em{font-size: 6em;}
+
+
 
   .fsize-xxxlarge{ font-size: xxx-large !important; }
 
@@ -25,6 +71,8 @@
   
   .inline{ display: inline !important; }
   
+  .none{display: none;}
+
   .block{display: block !important;}
 
   .absolute{ position: absolute !important; }
@@ -32,13 +80,5 @@
   .top-4px{ top: 4px !important;  }
 
   .center{text-align: center;}
-
-  .divider{ border-color: #BFC7DC !important; }
-
-  .bold{ font-weight: bold !important; }
-
-  .mr-20{ margin-right: 20% !important; }
-  
-  .mr-25{ margin-right: 25% !important; }
-  .mr-26{ margin-right: 26% !important; }
+ 
   
